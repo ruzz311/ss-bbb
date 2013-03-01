@@ -1,0 +1,36 @@
+
+//============================================================== VAR HELPERS
+
+ani_speed = 0.4s
+
+img_path( filename )
+  '/img/'+filename
+
+font_path( filename )
+  '/fonts/'+filename
+
+.clearfix
+  clearfix()
+
+//=================================================================== FONTS
+
+// load your fonts faster.
+embed_font(family_name, filename)
+  @font-face
+    font-weight: normal
+    font-style: normal
+    font-family: family_name
+    src: url(font_path(filename+'.eot'))
+    src: local('☺'), url(font_path(filename+'.woff')) format('woff'), url(font_path(filename+'.ttf')) format('truetype'), url(font_path(filename+'.svg#'+family_name )) format('svg')
+
+// load fonts into font-namespaces
+embed_font('FontNameSpace', 'font-filename-webfont')
+
+// Common font-family presets
+default_font = 'FontNameSpace', arial, "Comic Sans"
+
+
+//=================================================================== COLOR
+
+color_red = #A50000
+color_white = #ffffff

@@ -1,0 +1,17 @@
+{
+  "clients": [
+    {
+      "route": "/",
+      "name": "main",
+      "view": "app.jade",
+      "css" : [ "libs/bootstrap.css", "libs/bootstrap-responsive.css",
+                "index.styl" 
+              ],
+      "code": [ "libs/lodash.js", "libs/jquery.js", "libs/backbone.js", "libs/handlebars.js",
+                "plugins", 
+                "app"
+              ],
+      "tmpl": "*"
+    }
+  ]
+}
